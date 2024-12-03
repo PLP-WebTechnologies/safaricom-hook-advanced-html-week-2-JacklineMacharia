@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Building a Multimedia Webpage and a Registration Form</title>
+</head>
+  <body>
+    <h2>Audio Element</h2>
+    <audio control play pause autoplay loop>
+      <source src="song.mp3" type="audio/mpeg">
+      Hope you enjoy the song
+    </audio> 
+    <br><br>
+    <h2>Video Element</h2>
+    <video control play pause unmute autoplay loop width="640" height="360" poster="logo-no-background.png">
+      <source src="video.mp4" type="video/mp4">
+      Enjoy the video....
+    </video>
+    <br><br>
+    <form action="" method="POST">
+      <h2>Registration Form</h2>
+      <h3>Enter your personal details</h3>
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="full name" placeholder="Enter your full name..." required>
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email placeholder="Enter the your email" required>
+      <br>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" minlength="8" maxlength="20" placeholder="Enter your password with atleast 8 characters" required>
+      <br>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" minlengthe="1" maxlength="22" placeholder="Enter your age" required>
+      <br><br>
+      <h3>Gender</h3>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <br>
+      <input type="radio" id="female" name="female" value="female">
+      <label for="female">Female</label>
+      <br>
+      <input type="radio" id="others" name="others" value="others">
+      <label for="others">Others</label>
+      <br><br>
+      <p>Terms and Conditions.</p>
+      <input type="checkbox" id="terms" name="terms" value="terms" required>
+      <label for="terms">Check the box to agree with terms and conditions.</label>
+      <br><br>
+      <button type="register">Rgister</button>
+    </form>
+        
+  </body>
+</html>
